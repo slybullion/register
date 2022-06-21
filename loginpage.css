@@ -1,0 +1,203 @@
+            * {
+                box-sizing: border-box;
+                margin: auto;
+            }
+            
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+             :root {
+                --error-color: #dc3545;
+                --success-color: #28a745;
+                --warning-color: #ffc107;
+            }
+            
+            body {
+                background-image: url('bg-intro-desktop.png');
+                background-color: hsl(0, 100%, 74%);
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+                padding-top: 70px;
+                font-family: 'poppins', sans-serif;
+            }
+            
+            main {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 1440px;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                padding: 30px;
+            }
+            
+            .headt {
+                max-width: 500px;
+                margin-right: 40px;
+            }
+            
+            .headt h1 {
+                font-size: 40px;
+                color: white;
+                margin-bottom: 30px;
+            }
+            
+            .headt p {
+                font-size: 16px;
+                color: white;
+            }
+            
+            .stats {
+                margin-left: 20px;
+                width: 420px;
+            }
+            
+            .text {
+                text-align: center;
+                color: white;
+                background-color: hsl(248, 32%, 49%);
+                max-width: 550px;
+                border: gainsboro;
+                padding: 15px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+            
+            .form {
+                align-items: center;
+                justify-content: center;
+                padding-left: 30px;
+                padding: 20px;
+                padding-top: 30px;
+                margin-top: 20px;
+                background-color: white;
+                box-shadow: 0 2px 2px rgb(0 0 0 / 30%);
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+            
+            .formfield {
+                margin-bottom: 15px;
+            }
+            
+            input {
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 0px;
+                font-size: 14px;
+                width: 100%;
+                border-color: #f0f0ff;
+                color: hsl(249, 10%, 26%);
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+            
+            .formfield input:focus {
+                outline: none;
+                border-color: purple;
+            }
+            
+            .formfield.error input {
+                background-image: url('icon-error.svg');
+                background-repeat: no-repeat;
+                background-position: right;
+                background-origin: content-box;
+                border-color: var(--error-color);
+            }
+            
+            .formfield.success input {
+                border-color: var(--success-color);
+            }
+            
+            .formfield small {
+                padding-left: 230px;
+                justify-content: right;
+                text-align: right;
+                bottom: 12px;
+                right: 17px;
+                font-size: 10px;
+                color: var(--error-color);
+                margin-top: -10px;
+                padding-top: -20px;
+            }
+            
+            .btn {
+                background-color: hsl(154, 59%, 51%);
+                box-shadow: 0 2px 5px;
+                font-weight: 500;
+                color: white;
+                text-transform: uppercase;
+                border-radius: 10px;
+                padding: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                display: block;
+                width: 100%;
+            }
+            
+            .btn :hover {
+                cursor: pointer;
+            }
+            
+            .btn :focus {
+                outline: none;
+            }
+            
+            .formfield p {
+                text-align: center;
+                color: hsl(246, 25%, 77%);
+                font-size: small;
+            }
+            
+            .formfield a {
+                text-decoration: none;
+                color: #dc3545;
+            }
+            
+            @media screen and (max-width:700px) {
+                body {
+                    background-image: url('bg-intro-mobile.png');
+                    background-color: hsl(0, 100%, 74%);
+                    max-width: 375px;
+                    margin: auto;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 40px;
+                }
+                main {
+                    box-sizing: border-box;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 40px;
+                    align-items: center;
+                    margin: auto;
+                    width: 80%;
+                }
+                .headt {
+                    text-align: center;
+                }
+                .headt h1 {
+                    font-size: 25px;
+                    width: 300px;
+                }
+                .headt p {
+                    width: 320px;
+                    margin: 0;
+                    padding: 0;
+                }
+                .stats {
+                    max-width: 320px;
+                    margin: 0;
+                    padding: 0;
+                }
+                .formfield small {
+                    padding-left: 150px;
+                }
+            }
